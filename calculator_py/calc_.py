@@ -1,3 +1,5 @@
+import math
+
 class Calc:
     def __init__(self, num1, num2) -> float:
       self.num1 = num1
@@ -20,3 +22,6 @@ class Calc:
 
     def sqrt(self):
       return self.num1 ** 0.5
+
+    def log(self):
+      return math.log(self.num1, self.num2)
