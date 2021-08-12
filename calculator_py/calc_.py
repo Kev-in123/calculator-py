@@ -14,3 +14,6 @@ class Calc:
 
     def subtract(self):
       return self.num1 - self.num2
+
+    def pow(self):
+      return self.num1 ** self.num2
