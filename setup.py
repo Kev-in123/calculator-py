@@ -9,7 +9,7 @@ with open("requirements.txt", "r", encoding="utf-8") as req_file:
     requirements = req_file.readlines()
 
 setup(
-    name="calculatorpy",
+    name="calculator_py",
     version=version,
     description="This package is a simple calculator",
     long_description=long_description,
