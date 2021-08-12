@@ -25,7 +25,3 @@ c = Calc(5, 6)
 print(c.add())
 ```
 
-## TODO
- - logarithm
- - square root (first number only)
- - exponents
