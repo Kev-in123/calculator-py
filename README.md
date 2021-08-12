@@ -7,19 +7,19 @@ This package is a simple calculator.
 Stable version:
 
 ```
-pip install caculator-py
+pip install calculator-py
 ```
 
 Working version:
 
 ```
-pip install git+https://github.com/Kev-in123/caculator-py
+pip install git+https://github.com/Kev-in123/calculator-py
 ```
 
 ## Example Usage
 
 ```python
-from caculator-py import Calc
+from calculator-py import Calc
 
 c = Calc(5, 6)
 print(c.add())
