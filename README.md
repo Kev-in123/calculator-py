@@ -7,7 +7,7 @@ This package is a simple calculator.
 Stable version:
 
 ```
-pip install caculatorpy
+pip install caculator-py
 ```
 
 Working version:
@@ -19,7 +19,7 @@ pip install git+https://github.com/Kev-in123/caculator-py
 ## Example Usage
 
 ```python
-from caculatorpy import Calc
+from caculator-py import Calc
 
 c = Calc(5, 6)
 print(c.add())
