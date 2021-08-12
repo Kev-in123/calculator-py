@@ -17,3 +17,6 @@ class Calc:
 
     def pow(self):
       return self.num1 ** self.num2
+
+    def sqrt(self):
+      return self.num1 ** 0.5
