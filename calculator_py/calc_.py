@@ -29,3 +29,12 @@ class Calc:
 
     def log(self):
       return math.log(self.num1, self.num2)
+
+    def gcd(self):
+      return math.gcd(self.num1, self.num2)
+
+    def lcm(self):
+      return self.multiply()//math.gcd(self.num1, self.num2)
+    
+    def factorial(self):
+      return math.factorial(self.num1)
