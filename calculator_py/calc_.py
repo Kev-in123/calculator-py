@@ -11,7 +11,7 @@ class Calc:
 
     def divide(self):
       if self.num2 == 0:
-        raise InvalidArgument("Invalid Number Passed\nDivision by 0")
+        raise InvalidArgument("Division by 0")
       return self.num1 / self.num2
 
     def multiply(self):
@@ -24,9 +24,13 @@ class Calc:
       return self.num1 ** self.num2
 
     def sqrt(self):
+      if self.num1 < 0:
+        raise InvalidArgument("Domain error")
       return self.num1 ** 0.5
 
     def log(self):
+      if self.num1 < 0 or self.num2 < 0:
+        raise InvalidArgument("Domain error")
       return math.log(self.num1, self.num2)
 
     def gcd(self):
@@ -36,6 +40,8 @@ class Calc:
       return self.multiply()//self.gcd()
     
     def factorial(self):
+      if self.num1 < 0:
+        raise InvalidArgument("Domain error")
       return math.factorial(self.num1)
 
     def sin(self):
@@ -49,15 +55,15 @@ class Calc:
     
     def asin(self):
       if -1 > self.num1 > 1:
-        raise InvalidArgument("Invalid Number Passed\nDomain error")
+        raise InvalidArgument("Domain error")
       return math.asin(self.num1)
     
     def acos(self):
       if -1 > self.num1 > 1:
-        raise InvalidArgument("Invalid Number Passed\nDomain error")
+        raise InvalidArgument("Domain error")
       return math.acos(self.num1)
     
     def atan(self):
       if -1 > self.num1 > 1:
-        raise InvalidArgument("Invalid Number Passed\nDomain error")
+        raise InvalidArgument("Domain error")
       return math.atan(self.num1)
