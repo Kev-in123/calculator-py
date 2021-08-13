@@ -1,9 +1,15 @@
 import math
+from .errors import InvalidArgument as i
 
 class Calc:
     def __init__(self, num1, num2) -> float:
-      self.num1 = num1
-      self.num2 = num2
+      if isinstance((num1, num2), (float, int)):
+        self.num1 = num1
+        self.num2 = num2
+      else:
+        raise i("Invalid Argument")
+      
+      
     
     def add(self):
       return self.num1 + self.num2
