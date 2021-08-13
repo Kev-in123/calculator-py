@@ -10,7 +10,7 @@ Stable version:
 pip install calculator_py
 ```
 
-Working version:
+Development version:
 
 ```
 pip install git+https://github.com/Kev-in123/calculator-py
