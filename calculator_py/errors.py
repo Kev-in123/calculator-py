@@ -1,9 +1,4 @@
-__all__ = (
-    'InvalidArgument'
-)
-
-class CalcException(Exception):
-    pass
-
-class InvalidArgument(CalcException):
-    pass
+class CalcError(Exception):
+    def __init__(self, error):
+        self.message = error
+        super().__init__(self.message)
