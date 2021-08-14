@@ -1,5 +1,5 @@
 import math
-from .errors import InvalidArgument
+from .errors import CalcError
 
 class Calc:
     def __init__(self, num1, num2) -> float:
@@ -11,7 +11,7 @@ class Calc:
 
     def divide(self):
       if self.num2 == 0:
-        raise InvalidArgument("Division by 0")
+        raise CalcError("Division by 0")
       else:
         return self.num1 / self.num2
 
@@ -26,13 +26,13 @@ class Calc:
 
     def sqrt(self):
       if self.num1 < 0:
-        raise InvalidArgument("Domain error")
+        raise CalcError("Domain error")
       else:
         return self.num1 ** 0.5
 
     def log(self):
       if self.num1 < 0 or self.num2 < 0:
-        raise InvalidArgument("Domain error")
+        raise CalcError("Domain error")
       else:
         return math.log(self.num1, self.num2)
 
@@ -44,7 +44,7 @@ class Calc:
     
     def factorial(self):
       if self.num1 < 0:
-        raise InvalidArgument("Domain error")
+        raise CalcError("Domain error")
       else:
         return math.factorial(self.num1)
 
@@ -59,18 +59,18 @@ class Calc:
     
     def asin(self):
       if self.num1 not in range(-1, 2):
-        raise InvalidArgument("Domain error")
+        raise CalcError("Domain error")
       else:
         return math.asin(self.num1)
     
     def acos(self):
       if self.num1 not in range(-1, 2):
-        raise InvalidArgument("Domain error")
+        raise CalcError("Domain error")
       else:
         return math.acos(self.num1)
     
     def atan(self):
       if self.num1 not in range(-1, 2):
-        raise InvalidArgument("Domain error")
+        raise CalcError("Domain error")
       else:
         return math.atan(self.num1)
