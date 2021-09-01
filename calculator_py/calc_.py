@@ -43,7 +43,7 @@ class Calc:
         return math.gcd(self.num1, self.num2)
 
     def lcm(self):
-        return self.multiply()//self.gcd()
+        return self.num1 * self.num2//math.gcd(self.num1, self.num2)
     
     def factorial(self):
         if self.num1 < 0:
