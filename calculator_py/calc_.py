@@ -83,3 +83,7 @@ class Calc:
       apothem = len_of_side/(2 * math.tan(math.radians(180/num_of_sides)))
       area = num_of_sides * len_of_side * apothem/2
       return round(area, 5)
+
+    def get_perimeter(num_of_sides, len_of_side):
+      perimeter = num_of_sides * len_of_side
+      return round(perimeter, 5)
