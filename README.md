@@ -1,6 +1,7 @@
 # Calculator.py
 
-This package is a simple calculator.
+This package is a simple calculator<br>
+Most useless project I made
 
 ## Installation
 
